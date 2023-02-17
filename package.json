@@ -4,8 +4,11 @@
   "description": "test project for nsolid console",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-nsolid": "NSOLID_APPNAME=url-shortener NSOLID_TRACING_ENABLED=1  NSOLID_COMMAND=localhost:9001 nsolid index.js "
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.13.0"
+  }
 }
